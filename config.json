@@ -18,18 +18,16 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "xhttp",
+        "xhttpSettings": {
+          "mode": "auto",
+          "path": "/"
+        },
         "security": "reality",
         "realitySettings": {
-          "dest": "static.codepen.io:443",
+          "dest": "www.google.com:443",
           "serverNames": [
-            "static.codepen.io",
-            "bootstrapcdn.com",
-            "unpkg.com",
-            "cdn.medium.com",
-            "cloudflare.net",
-            "paypal.com",
-            "security.vercel.com"
+            "www.google.com"
           ],
           "privateKey": "ACtDNdp7ZNx-sZ_AskR-DpaZ-AMDogP0GSA0HBLyzEA",
           "shortIds": [

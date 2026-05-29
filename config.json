@@ -1,0 +1,52 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "e601ac11-0e84-4462-b8bf-ab0918478da2",
+            "flow": "xtls-rprx-vision",
+            "email": "shared-users"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "dest": "static.codepen.io:443",
+          "serverNames": [
+            "static.codepen.io",
+            "bootstrapcdn.com",
+            "unpkg.com",
+            "cdn.medium.com",
+            "cloudflare.net",
+            "paypal.com",
+            "security.vercel.com"
+          ],
+          "privateKey": "ACtDNdp7ZNx-sZ_AskR-DpaZ-AMDogP0GSA0HBLyzEA",
+          "shortIds": [
+            "6ba85179e30d4fc2"
+          ]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    }
+  ]
+}
